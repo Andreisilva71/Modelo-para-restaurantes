@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9fbfd;
+    color: #333;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    overflow-x: hidden;
+}
+
+.cabecalho{
+    background-color: #0487af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #08acde, #0487af);
+}
+
+h1{
+    font-size: 40px;
+}
+
+.subtitulo{
+    font-size: 20px;
+}
+
+nav{
+    background-color: #08acde;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.boas_vindas{
+    background: linear-gradient(45deg, #0487af, #08acde);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
+.container{
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #047699;
+    font-size: 30px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    transition: transform 0.3 ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 3px;
+    border-radius: 5px;
+}
+
+.valor{
+    font-weight: bold;
+    color: #007691;
+    margin-top: 10px;
+    display: block;
+}
+
+footer{
+    background-color: #047699;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 15px;
+    background-size: cover;
+}
+.ingredientes{
+    color: #007691;
+    text-align: left;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingredientes ul{
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.button{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5% 30;
+    height: 30px;
+    color: #007691;
+    background-color: #ccd4d6;
+    border: #007691;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: auto;
+    box-shadow: 1.5px 1.5px 3px black;
+}
+
+.button:hover{
+    background-color: #b7e4f1;
+}
