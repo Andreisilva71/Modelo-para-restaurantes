@@ -1,156 +1,219 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e9fbfd;
-    color: #333;
-    font-family: "Edu NSW ACT Cursive", cursive;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #212529;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
-.cabecalho{
-    background-color: #0487af;
+/* Typography styles */
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #1a1a2e;
+}
+
+.cabecalho {
+    background: linear-gradient(135deg, #E85D04, #DC2F02);
     color: white;
     text-align: center;
-    padding: 20px;
-    background: linear-gradient(90deg, #08acde, #0487af);
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(220, 47, 2, 0.2);
 }
 
-h1{
-    font-size: 40px;
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: white;
+    margin-bottom: 8px;
 }
 
-.subtitulo{
+.subtitulo {
     font-size: 20px;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
-nav{
-    background-color: #08acde;
-    padding: 10px;
+nav.barra_navegacao {
+    background-color: #9D0208;
+    padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav a{
+nav.barra_navegacao a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav.barra_navegacao a:hover {
+    color: #FFBA08;
+    transform: translateY(-2px);
 }
 
-.boas_vindas{
-    background: linear-gradient(45deg, #0487af, #08acde);
-    height: 300px;
+.boas_vindas {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 1.5px 1.5px 3px black;
-}
-
-.container{
-    padding: 20px;
-    max-width: 1400px;
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-h2{
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-family: 'Outfit', sans-serif;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    color: #047699;
-    font-size: 30px;
+    padding: 0 20px;
 }
 
-.menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px
-}
-
-.card{
-    background: white;
+.container {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px black;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #370617;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #E85D04;
+    border-radius: 2px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 80%;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03);
 }
 
-.card:hover{
-    transform: translateY(-5px);
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.card img{
+.card img {
     width: 100%;
-    border-radius: 3px;
-    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.valor{
-    font-weight: bold;
-    color: #007691;
-    margin-top: 10px;
+.card p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2b2d42;
+}
+
+.valor {
+    font-weight: 700;
+    color: #E85D04;
+    font-size: 24px;
+    margin: 5px 0 15px;
     display: block;
 }
 
-footer{
-    background-color: #047699;
-    color: white;
-    padding: 15px;
-    margin-top: 30px;
-    width: 100%;
-    padding-top: 15px;
-    background-size: cover;
-}
-.ingredientes{
-    color: #007691;
+.ingredientes {
     text-align: left;
-
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.ingredientes ul{
-  padding-left: 20px;
-  margin-bottom: 20px;
+.ingredientes h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.button{
+.ingredientes ul {
+    padding-left: 20px;
+    margin-bottom: 25px;
+    color: #495057;
+    font-size: 15px;
+}
+
+.ingredientes li {
+    margin-bottom: 5px;
+}
+
+.button {
     text-align: center;
-    justify-content: center;
     width: 100%;
-    margin: 5% 30;
-    height: 30px;
-    color: #007691;
-    background-color: #ccd4d6;
-    border: #007691;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 500;
+    padding: 12px 0;
+    color: white;
+    background-color: #E85D04;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     margin-top: auto;
-    box-shadow: 1.5px 1.5px 3px black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.button:hover{
-    background-color: #b7e4f1;
+.button:hover {
+    background-color: #DC2F02;
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #370617;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.8;
 }

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo para Restaurante</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+PE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -19,7 +18,7 @@
 
     <nav class="barra_navegacao">
         <a href="">Início</a>
-        <a href="">Cardápio</a>
+        <a href="#cardapio">Cardápio</a>
         <a href="">Sobre Nós</a> 
         <a href="">Contato</a>
     </nav>
@@ -29,7 +28,7 @@
     </div>
 
     <div class="container">
-        <h2>Nosso Cardápio</h2>
+        <h2 id="cardapio">Nosso Cardápio</h2>
 
         <div class="menu">
             <div class="card">
@@ -106,12 +105,47 @@
                  </div>
             </div>
              
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lasanha Tradicional">
+                <p>Lasanha Tradicional</p>
+                <span class="valor">R$ 38,90</span>
+                 <div class="ingredientes">
+                     <h3>Ingredientes</h3>
+                     <ul>
+                        <li>Massa fresca</li>
+                        <li>Carne moída</li>
+                        <li>Molho de tomate artesanal</li>
+                        <li>Queijo Mussarela e Parmesão</li>
+                        <li>Presunto</li>
+                     </ul>
+                     <button class="button"> Fazer Pedido</button>
+                 </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Salmão ao Forno">
+                <p>Salmão Premium Assado</p>
+                <span class="valor">R$ 55,90</span>
+                 <div class="ingredientes">
+                     <h3>Ingredientes</h3>
+                     <ul>
+                        <li>Posta de Salmão</li>
+                        <li>Azeite de Oliva e Limão</li>
+                        <li>Alecrim e Ervas Finas</li>
+                        <li>Batatas Rústicas</li>
+                        <li>Tomilho</li>
+                     </ul>
+                     <button class="button"> Fazer Pedido</button>
+                 </div>
+            </div>
+
         </div>
     </div>
 
     <footer>
-        <p>Rua das Palmeiras, nº 123, Bairro Centro, Lauro de Freitas – BA, CEP: 42700-000</p>
-        <p>Contato (71) 3456-7890</p>
+        <p>Rua do Centro, nº 123, Bairro Centro, Cidade - ESTADO, CEP: 00000-000</p>
+        <p>Contato (00) 00000-0000</p>
     </footer>
 </body>
 </html>
